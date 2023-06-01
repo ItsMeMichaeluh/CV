@@ -126,3 +126,9 @@
       filter: hue-rotate(360deg);
     }
   }
+
+  .div-hoog img {
+    height: 50%;
+    background-size: cover;
+    width: 100%;
+  }

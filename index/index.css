@@ -8,7 +8,7 @@
   }
 
   body{
-    background-image: url(/afbeeldingen/background-CV.jpg) ;
+    background-image: url(/afbeeldingen/rene-padillo-d8nGnF1IqCk-unsplash.jpg) ;
   }
 
   .wrapper{
@@ -17,10 +17,7 @@
     left: 0;
     height: 100%;
     width: 100%;
-    /*background: linear-gradient(-135deg, #c850c0, #4158d0);*/
-    /* background: linear-gradient(375deg, #1cc7d0, #2ede98); */
-   /* background: linear-gradient(-45deg, #e3eefe 0%, #efddfb 100%);*/
-    /* clip-path: circle(25px at calc(0% + 45px) 45px); */
+    background: linear-gradient(375deg, #1cd043, #2ede98); 
     background: #000000;
     clip-path: circle(25px at calc(100% - 45px) 45px);
     transition: all 0.3s ease-in-out;
@@ -42,9 +39,6 @@
     font-size: 20px;
     color: #fff;
     cursor: pointer;
-    /*background: linear-gradient(-135deg, #c850c0, #4158d0);*/
-    /* background: linear-gradient(375deg, #1cc7d0, #2ede98); */
-   /* background: linear-gradient(-45deg, #e3eefe 0%, #efddfb 100%); */
     background: #000000;
     transition: all 0.3s ease-in-out;
   }
@@ -78,12 +72,10 @@
     line-height: 50px;
     transition: all 0.3s ease;
   }
-  .wrapper ul li a:after{
+  .wrapper ul li a:after {
     position: absolute;
     content: "";
     background: rgb(255, 255, 255)000;
-     background: linear-gradient(#14ffe9, #ffeb3b, #ff00e0);
-    /*background: linear-gradient(375deg, #1cc7d0, #2ede98);*/
     width: 104%;
     height: 110%;
     left: -2%;
@@ -91,9 +83,22 @@
     border-radius: 50px;
     transform: scaleY(0);
     z-index: -1;
-    animation: rotate 1.5s linear infinite;
     transition: transform 0.3s ease;
+    animation: color-change 6s ease infinite;
   }
+  
+  @keyframes color-change {
+    0% {
+      background: linear-gradient(rgb(24, 141, 19), rgb(61, 17, 255));
+    }
+    50% {
+      background: linear-gradient(rgb(153, 151, 31), rgb(185, 28, 101));
+    }
+    100% {
+      background: linear-gradient(rgb(121, 16, 69), rgb(9, 255, 0)979);
+    }
+  }
+    
   .wrapper ul li a:hover:after{
     transform: scaleY(1);
   }
@@ -104,21 +109,44 @@
     display: none;
   }
   .content{
+    font-size: 8rem;
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
-    z-index: -1;
-    text-align: center;
-    width: 100%;
-    color: #ffffff;
+    transform: translate(-50%, -50%) skewY(-6deg);
+    transform-origin: bottom left;  
+    z-index: -1 ;
+    color: transparent;
+    text-shadow:
+     
+     /* This set has more blur distance to create glowing effect */
+     1px -1px 10px rgba(255, 255, 255, 0.4), 
+     0px -1px 10px rgba(255, 255, 255, 0.4),  
+    -1px -1px 10px rgba(255, 255, 255, 0.4), 
+
+     
+     /* This set has darken color to create depth */
+    -1px -3px 2px #ddd, 
+    -2px -3px 2px #ddd, 
+    -3px -3px 2px #ddd,
+
+    -2px -4px 2px #fff, 
+    -3px -4px 2px #fff, 
+    -4px -4px 2px #fff,
+
+    -3px -5px 1px #fff, 
+    -4px -5px 1px #fff, 
+    -5px -5px 1px #fff;
   }
+  
+
+
   .content .title{
-    font-size: 4rem;
+    font-size: 6rem;
     font-weight: 700;
   }
   .content p{
-    font-size: 3rem;
+    font-size: 5rem;
     font-weight: 600;
   }
   
