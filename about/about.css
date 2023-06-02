@@ -7,14 +7,6 @@
     
   }
 
-  body{
-    background-image: url(/afbeeldingen/about-me.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center center;
-
-  }
-
   .wrapper{
     position: fixed;
     top: 0;
@@ -28,13 +20,14 @@
     background: #000000;
     clip-path: circle(25px at calc(100% - 45px) 45px);
     transition: all 0.3s ease-in-out;
+    z-index: 2;
   }
   #active:checked ~ .wrapper{
     clip-path: circle(75%);
   }
   .menu-btn{
     position: absolute;
-    z-index: 2;
+    z-index: 3;
     right: 20px;
     /* left: 20px; */
     top: 20px;
@@ -122,13 +115,24 @@
     display: flex;
     justify-content: center;
     text-align: center;
+    padding-left: 0 !important ; 
+    padding-right: 0 !important;
+    margin-left: 0;
+    margin-right: 0;
   }
 
 
   .containerHoog{
     text-shadow: 4px 4px 15px rgba(0,0,0,0.87);
-    z-index: -1;
-    justify-content: ;
+    z-index: 1;
+    background-image: url(/afbeeldingen/about-me.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    margin-left: 0;
+    margin-right: 0;
+    padding-left: 0;
+    padding-right: 0;
   }
 
   .headText{
@@ -152,4 +156,8 @@
     margin-right: 3rem;
   }
 
+  .div-laag{
+    background-color: black;
+    margin-top: 5rem;
+  }
   
