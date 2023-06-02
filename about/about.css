@@ -7,6 +7,14 @@
     
   }
 
+  body{
+    background-image: url(/afbeeldingen/about-me.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+
+  }
+
   .wrapper{
     position: fixed;
     top: 0;
@@ -99,24 +107,7 @@
   input[type="checkbox"]{
     display: none;
   }
-  .content{
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    z-index: -1;
-    text-align: center;
-    width: 100%;
-    color: #ffffff;
-  }
-  .content .title{
-    font-size: 4rem;
-    font-weight: 700;
-  }
-  .content p{
-    font-size: 3rem;
-    font-weight: 600;
-  }
+
   
   @keyframes rotate {
     0%{
@@ -127,8 +118,38 @@
     }
   }
 
-  .div-hoog img {
-    height: 50%;
-    background-size: cover;
-    width: 100%;
+  .div-hoog{
+    display: flex;
+    justify-content: center;
+    text-align: center;
   }
+
+
+  .containerHoog{
+    text-shadow: 4px 4px 15px rgba(0,0,0,0.87);
+    z-index: -1;
+    justify-content: ;
+  }
+
+  .headText{
+    display: flex;
+    justify-content: center;
+  }
+
+
+  .smallText{
+  color: white;
+  }
+
+  .social-icons {
+    color:white;
+    font-size:2rem;
+    text-align: center;
+
+  }
+
+  .social-icons i {
+    margin-right: 3rem;
+  }
+
+  
