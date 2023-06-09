@@ -356,6 +356,13 @@ body {
     padding-top: 5rem;
   }
 
+  .text-1{
+    width: 100%;
+  }
+
+  .text-2{
+    width: 100%;
+  }
 
   .smallText{
   color: white;
@@ -376,6 +383,7 @@ body {
 
   .div-laag{
     background-color: #010005;
-    margin-bottom: 50rem;
+    margin-bottom: 50rem; 
+    display: flex;
   }
   
