@@ -49,7 +49,7 @@ body {
 }
 
 .nav div.main_list ul li a:hover {
-    color: #082b48;
+    color: rgba(114, 114, 235);
 }
 
 .navTrigger {
@@ -347,7 +347,7 @@ body {
     margin-left: 0;
     margin-right: 0;
     padding-left: 0;
-    padding-right: 0;
+    padding-right: 0;    
   }
 
   .headText{
@@ -371,7 +371,14 @@ body {
   }
 
   .social-icons i {
-    margin-right: 3rem;
+    padding: 1rem;
+     color: white;
+     animation: bounce 1s infinite alternate !important;
+     animation: bounce2 0.4s infinite alternate !important;
+  }
+
+  .social-icons i:hover {
+    color: rgb(114, 114, 235);
   }
 
   .div-laag{
@@ -379,3 +386,47 @@ body {
     margin-bottom: 50rem;
   }
   
+  .fotoBox{
+    text-align: center;
+    padding-bottom: 8vh;
+    -webkit-box-shadow: 2px 50px 50px 31px #000000; 
+    box-shadow: 2px 50px 50px 31px #000000;
+  }
+
+  .pfp{
+    border-radius: 50%;
+    border: 10px rgba(255, 255, 255, 0.447) solid;
+    width: 23%;
+    transition: 4s;
+    box-shadow: 0px 0px 100px 37px #b6b5cf90;
+    
+  }
+
+  .pfp:hover {
+    transition: 4s;
+    transform: scale(2);
+    transform: rotate(3600deg);
+    width: 1300px;
+  }
+
+  @keyframes bounce {
+    0% {
+        transform: scale(0);
+    }
+    100% {
+        transform: scale(+300px);
+    }
+}
+
+.bounce {
+    animation: bounce 0.2s infinite alternate !important;
+}
+
+@keyframes bounce2 {
+    0% {
+        transform: translateX(600px);
+    }
+    100% {
+        transform: translateX(-600px);
+    }
+}

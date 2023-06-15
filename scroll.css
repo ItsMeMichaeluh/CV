@@ -1,0 +1,17 @@
+* {
+    scrollbar-width: auto;
+    scrollbar-color: #fdfdfd #ffffff;}
+  
+    /* Chrome, Edge, and Safari */
+    *::-webkit-scrollbar {
+      width: 10px;
+    }
+  
+    *::-webkit-scrollbar-track {
+      background: #ffffff;
+    }
+  
+    *::-webkit-scrollbar-thumb {
+      background-color: #000000;
+      border: 3px solid transparent;
+    }
