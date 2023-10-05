@@ -1,19 +1,6 @@
-
-html,
-body {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: "Quicksand", sans-serif;
-    font-size: 62.5%;
-    font-size: 10px;
-    background-color: black !important ;
+body{
+    background-image: url(/afbeeldingen/darkBackground.jpg)
 }
-
-@font-face {
-    font-family: ostrich;
-    src: url(/font/Gabarito-VariableFont_wght.ttf);
-  }
 
 .nav {
     width: 100%;
@@ -330,188 +317,170 @@ body {
 
 }
 
-    .pfp-main{
-        -webkit-box-shadow: 0px 0px 19px 8px rgba(255,255,255,1);
-        -moz-box-shadow: 0px 0px 19px 8px rgba(255,255,255,1);
-        box-shadow: 0px 0px 19px 8px rgba(255,255,255,1);
-    }
+:root {
+  --page-background: 277deg, 55%, 12%;
+}
 
-  .div-hoog{
-    display: flex;
-    justify-content: center;
-    text-align: center;
- 
-  }
-
-
-  .containerHoog-1{
-    text-shadow: 4px 4px 15px rgba(0,0,0,0.87);
-
-    background-image: url(/afbeeldingen/about-me.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center center;
-      
-  }
-
-  .headText{
-    display: flex;
-    justify-content: center;
-    padding-top: 21rem;
-  }
-
-
-  .smallText{
+button {
+  --text-base: 277deg, 55%, 40%;
+  --text-hover: 307deg, 72%, 86%;
+  --shadow-start: 52deg, 100%, 72%;
+  --shadow-end: 282deg, 90%, 50%;
+  --shadow-inner: 277deg, 90%, 62%;
+  all: unset;
   color: white;
-  font-size: 2.5rem;
-  font-weight: 4rem;
-  transform: rotate(3600deg);
+  font: 700 1.125rem/1.2 Raleway, sans-serif;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  text-align: center;
+  padding: 0.85em;
+  max-width: 100%;
+  width: 12em;
+  background: inherit;
+  background-clip: padding-box;
+  border: 5px solid rgb(214, 200, 200);
+  border-radius: 2em;
+  cursor: pointer;
+  position: relative;
+  transition: 0.25s ease-out;
+  margin-top: 2rem;
+  margin-right: 2rem;
+  float:right !important;
+}
+button::before, button::after {
+  content: "";
+  border-radius: inherit;
+  transition: inherit;
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+}
+button::before {
+  inset: -0.2em;
+  z-index: -1;
+  background:linear-gradient(0deg, rgb(118, 118, 118) 0%, #C0C0C0 100%);
+  filter: blur(1.2em) saturate(1.2);
+  transform-origin: bottom;
+  transform: scaleY(0.5);
+  opacity: 0;
+}
 
-  }
+button::after {
+  box-shadow: inset 0 0 0 1px #fff, 0 0 0 4px rgba(255, 255, 255, 0.988), 1px 1px 0 4px #fff;
+  mix-blend-mode: overlay;
+  opacity: 0;
+}
+button:hover, button:focus {
+  color: rgb(255, 255, 255);
+  border-color: transparent;
+  box-shadow: inset 0 1.4em 0 hsla(var(--shadow-inner), rgb(145, 18, 18)), inset 0 0 1.4em hsla(var(--shadow-inner), 0.72), 0 1px 1px hsla(var(--shadow-inner), 0.32);
+}
+button:hover::before, button:hover::after, button:focus::before, button:focus::after {
+  transform: none;
+  opacity: 1;
+}
 
-    
+.kaart-lang {
+    width: 854px;
+    height: 480px;
+    transition: 0.2s;
+    border: 5px solid white;
+    border-radius: 15px;
+}
 
-  .social-icons {
-    color:white;
-    font-size:3vw;
+.kaart-kort {
+    width: 480px;
+    height: 480px;
+    transition: 0.2s;
+    border: 5px solid white;
+    border-radius: 15px;
+}
+
+.kaart-text {
+    width: 480px;
+    height: 480px;
+    background-color: rgba(255, 255, 255, 0.626);
+    border-radius: 2rem;
     text-align: center;
-
-  }
-
-  .social-icons i {
-    padding: 1rem;
-     color: white;
-  }
-
-  .social-icons i:hover {
-    color: rgb(114, 114, 235);
-  }
-
-  .containerHoog-2{
-    background-color: #000000;
-  }
-
-  .pfp{
- 
-    border-radius:50%;
-    border: 10px rgba(255, 255, 255, 0.447) solid;
-    box-shadow: 0px 0px 100px 37px #b6b5cf90;
-    ;
-  }
-
-
-  .text1{
-    color: white;
-    -webkit-box-shadow: 2px 50px 50px 31px #000000; 
-    box-shadow: 2px 50px 50px 31px #000000;
-    text-align: center;
-    font-size: 2.3vh;
-    font-weight: 2vh;
-    justify-content: center;
-
-  }
-
-  .text1-2{
-    padding: 4vh;
-
-    font-size: 4vh;
-    color: rgb(255, 255, 255);
-  }
-
-  .text-2{
-    z-index: 50;
-  }
-
-  .text-3{
-    z-index: 5
-  }
-
-  .laag1{
-     -webkit-box-shadow: 2px 50px 50px 31px #000000; 
-     box-shadow: 2px 50px 50px 31px #000000; 
-    padding: 3vh;
-    justify-content: space-between;
-    margin-top: 28rem;
-
-  }
-
-  .containerLaag-1 {
-    border: 1px solid red;
-  }
-
-  .projectFlexbox {
     display: flex;
-    flex-direction: column;
-    justify-content: center;
-    text-align: center;
     align-items: center;
-  }
+}
 
-  .gameTitle {
+.kaart-text p {
+    margin: 10px;
+    font-size: 20px;
+    line-height: 1.2;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    width: 95%;
+    white-space: normal;
+    word-break:normal;
+}
+
+.text-div {
     text-align: center;
-    font-size: 5em;
-    font-weight: 700;
-    color: white;
-    font-family: ostrich;
-  }
-
-  .gameDescription {
-    padding-top: 3rem;
-    padding-bottom: 5rem;
-    font-size:medium;
-    color: white;
-    font-family: ostrich;
-    font-size: 4em;
-  }
-
-  .gameBtn {
-    transition: 0.3s;
-    width: 20rem;
-    color: white;
-    border-radius: 10px;
-    border: 1px solid rgb(255, 255, 255);
-    font-family: ostrich;
-    padding-bottom: 0;
-    height: 8rem;
-    text-decoration: none;
-  }
-
-  .gameBtn:hover {
-    transition: 0.3s;
-    background-color: white;
-    text-decoration: none;
-
-  }
-
-  .buitenBox{
-    padding-top: 22rem;
-    justify-content: center;
-    background-color: black;
-  }
-
-  .workbox {
-    padding-bottom: 4rem;
-    width: 80%;
-    background-color: black;
-    flex-direction: row;
-
-  }
-
-  .workbox h1 {
-    color: white;
-    font-size: 7vh;
-    padding-top: 2rem;
-    font-family: ostrich;
-    text-decoration: none;
-
-    
-  }
-  .workbox p {
-    color: rgb(123, 123, 123);
+    padding: 5rem;
     font-size: 3vh;
-    font-family: ostrich;
+    font-family: "Montserrat", sans-serif;
+    color: white;
+}
+
+h1 {
+    font-weight: 900;
+}
+a {
     text-decoration: none;
+    color: black;
+}
 
-  }
+.text-div p {
+    background-color: rgba(255, 255, 255, 0.249);
+    border-radius: 15px;
+}
 
+.kaart-kort img {
+    object-fit:cover;
+    width: 100%;
+    height: 100%;
+    transition: 0.5s;
+    border-radius: 10px;
+}
+
+
+.kaart-lang img {
+    object-fit:fill;
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+}
+
+.kaart-lang:hover {
+    transform: scale(1.1);
+    transition: 0.5s;
+}
+
+.kaart-kort:hover {
+    transform: scale(1.1);
+    transition: 0.5s;
+}
+
+.topBar{
+    justify-content: space-between;
+}
+
+.backbutton{
+    float: right;
+    width: 7rem;
+    height: auto;
+    margin-right: 2rem;
+    margin-top: 1rem;
+    
+}
+
+.backbutton:hover{
+transition: 0.35;
+color: white;
+
+}
 
