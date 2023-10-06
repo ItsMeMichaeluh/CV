@@ -21,15 +21,15 @@
 	<body>
 
     
-        <nav class="nav">
+        <nav class="nav" style="display:flex">
             <div class="topBar">
-                <a href="/">
-                    <img src="/afbeeldingen/Logo.jpeg" href="/" style="width: 30vh; padding-top: 0.5vh" alt="Logo" />
+                <a>
+                    <img src="/afbeeldingen/Logo.jpeg" id="scrollImage" style="width: 30vh; margin-left: 2rem; padding-top: 0.5vh" alt="Logo" />
                 </a>
 
-                <button onclick="history.back()" class="backbutton">Back</button>
+                
             </div>
-</div>
+			<button onclick="history.back()" class="backbutton">Back</button> 
           </nav>
 
         
@@ -123,7 +123,6 @@
 			crossorigin="anonymous"
 		></script>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-        <script src="js/scripts.js"></script>
   
         <script src="retrogen.js"></script>
         <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js"

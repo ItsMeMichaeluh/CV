@@ -4,49 +4,14 @@ body{
 
 .nav {
     width: 100%;
-    height: 65px;
+    height: 75px;
     position: fixed;
-    line-height: 65px;
+    line-height: 75px;
     text-align: center;
     z-index: 999    ;
-    margin-right: 0 !important;
-}
-
-.nav div.main_list {
-    height: 65px;
-    float: right;
-}
-
-.nav div.main_list ul {
-    width: 100%;
-    height: 65px;
     display: flex;
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    
 }
 
-.nav div.main_list ul li {
-    width: auto;
-    height: 65px;
-    padding: 0;
-    padding-right: 3rem;
-    animation: turn 10s infinite alternate !important;
-
-}
-
-.nav div.main_list ul li a {
-    text-decoration: none;
-    color: #fff;
-    line-height: 65px;
-    font-size: 2.4rem;
-    
-}
-
-.nav div.main_list ul li a:hover {
-    color: rgba(114, 114, 235);
-}
 
 .navTrigger {
     display: none;
@@ -57,6 +22,7 @@ body{
     padding-bottom: 20px;
     -webkit-transition: all 0.4s ease;
     transition: all 0.4s ease;
+    justify-content: space-between;
 }
 
 @media screen and (min-width: 768px) and (max-width: 1024px) {
@@ -69,99 +35,9 @@ body{
     .navTrigger {
         display: block;
     }
-
-    .nav div.main_list {
-        width: 100%;
-        height: 0;
-        overflow: hidden;
-    }
-    .nav div.show_list {
-        height: auto;
-        display: none;
-    }
-    .nav div.main_list ul {
-        flex-direction: column;
-        width: 100%;
-        height: 100vh;
-        right: 0;
-        left: 0;
-        bottom: 0;
-        background-color: #111;
-        /*same background color of navbar*/
-        background-position: center top;
-    }
-    .nav div.main_list ul li {
-        width: 100%;
-        text-align: right;
-    }
-    .nav div.main_list ul li a {
-        text-align: center;
-        width: 100%;
-        font-size: 3rem;
-        padding: 20px;
-        
-    }
-    .nav div.media_button {
-        display: block;
-    }
 }
 
-.navTrigger {
-    cursor: pointer;
-    width: 30px;
-    height: 25px;
-    margin: auto;
-    position: absolute;
-    right: 30px;
-    top: 0;
-    bottom: 0;
-}
 
-.navTrigger i {
-    background-color: #fff;
-    border-radius: 2px;
-    content: '';
-    display: block;
-    width: 100%;
-    height: 4px;
-}
-
-.navTrigger i:nth-child(1) {
-    -webkit-animation: outT 0.8s backwards;
-    animation: outT 0.8s backwards;
-    -webkit-animation-direction: reverse;
-    animation-direction: reverse;
-}
-
-.navTrigger i:nth-child(2) {
-    margin: 5px 0;
-    -webkit-animation: outM 0.8s backwards;
-    animation: outM 0.8s backwards;
-    -webkit-animation-direction: reverse;
-    animation-direction: reverse;
-}
-
-.navTrigger i:nth-child(3) {
-    -webkit-animation: outBtm 0.8s backwards;
-    animation: outBtm 0.8s backwards;
-    -webkit-animation-direction: reverse;
-    animation-direction: reverse;
-}
-
-.navTrigger.active i:nth-child(1) {
-    -webkit-animation: inT 0.8s forwards;
-    animation: inT 0.8s forwards;
-}
-
-.navTrigger.active i:nth-child(2) {
-    -webkit-animation: inM 0.8s forwards;
-    animation: inM 0.8s forwards;
-}
-
-.navTrigger.active i:nth-child(3) {
-    -webkit-animation: inBtm 0.8s forwards;
-    animation: inBtm 0.8s forwards;
-}
 
 @-webkit-keyframes inM {
     50% {
@@ -295,6 +171,11 @@ body{
     }
 }
 
+#scrollImage{
+    width: 200px;
+    transition: width 0.5s;
+}
+
 .affix {
     padding: 0;
     background-color: #111;
@@ -321,6 +202,12 @@ body{
   --page-background: 277deg, 55%, 12%;
 }
 
+.topBar {
+    justify-content: space-between;
+    float: right;
+    display: flex;
+}
+
 button {
   --text-base: 277deg, 55%, 40%;
   --text-hover: 307deg, 72%, 86%;
@@ -338,15 +225,16 @@ button {
   width: 12em;
   background: inherit;
   background-clip: padding-box;
-  border: 5px solid rgb(214, 200, 200);
+  border: 5px solid rgb(255, 255, 255);
   border-radius: 2em;
   cursor: pointer;
   position: relative;
   transition: 0.25s ease-out;
-  margin-top: 2rem;
   margin-right: 2rem;
-  float:right !important;
+  z-index: 4;
+
 }
+
 button::before, button::after {
   content: "";
   border-radius: inherit;
@@ -366,7 +254,7 @@ button::before {
 }
 
 button::after {
-  box-shadow: inset 0 0 0 1px #fff, 0 0 0 4px rgba(255, 255, 255, 0.988), 1px 1px 0 4px #fff;
+  box-shadow: inset 0 0 0 1px #fff, 0 0 0 4px rgba(255, 255, 255, 0.988), 1px 1px 0 1px #fff;
   mix-blend-mode: overlay;
   opacity: 0;
 }
@@ -469,18 +357,50 @@ a {
     justify-content: space-between;
 }
 
-.backbutton{
-    float: right;
-    width: 7rem;
-    height: auto;
-    margin-right: 2rem;
-    margin-top: 1rem;
-    
+
+
+<!-- HTML !-->
+<button class="button-67" role="button">Button 67</button>
+
+/* CSS */
+.button-67 {
+  align-items: center;
+  background: #f5f5fa;
+  border: 0;
+  border-radius: 8px;
+  box-shadow: -10px -10px 30px 0 #fff,10px 10px 30px 0 #1d0dca17;
+  box-sizing: border-box;
+  color: #2a1f62;
+  cursor: pointer;
+  display: flex;
+  font-family: "Cascadia Code",Consolas,Monaco,"Andale Mono","Ubuntu Mono",monospace;
+  font-size: 1rem;
+  justify-content: center;
+  line-height: 1.5rem;
+  padding: 15px;
+  position: relative;
+  text-align: left;
+  transition: .2s;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  white-space: pre;
+  width: max-content;
+  word-break: normal;
+  word-spacing: normal;
 }
 
-.backbutton:hover{
-transition: 0.35;
-color: white;
-
+.button-67:hover {
+  background: #f8f8ff;
+  box-shadow: -15px -15px 30px 0 #fff, 15px 15px 30px 0 #1d0dca17;
 }
 
+@media (min-width: 768px) {
+  .button-67 {
+    padding: 24px;
+  }
+}
+        
+
+/* Parent background */
+#F5F5FA
