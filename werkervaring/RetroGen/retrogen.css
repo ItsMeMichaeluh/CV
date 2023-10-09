@@ -10,6 +10,12 @@ body{
     text-align: center;
     z-index: 999    ;
     display: flex;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    -webkit-transition: all 0.4s ease;
+    transition: all 0.4s ease;
+    justify-content: space-between;
+    margin-top: 0px !important;   
 }
 
 
@@ -17,13 +23,6 @@ body{
     display: none;
 }
 
-.nav {
-    padding-top: 20px;
-    padding-bottom: 20px;
-    -webkit-transition: all 0.4s ease;
-    transition: all 0.4s ease;
-    justify-content: space-between;
-}
 
 @media screen and (min-width: 768px) and (max-width: 1024px) {
     .container {
@@ -202,70 +201,35 @@ body{
   --page-background: 277deg, 55%, 12%;
 }
 
-.topBar {
-    justify-content: space-between;
-    float: right;
-    display: flex;
+
+.backbutton{
+display: inline-block;
+outline: none;
+cursor: pointer;
+font-size: 14px;
+line-height: 1;
+border-radius: 500px;
+transition-property: background-color,border-color,color,box-shadow,filter;
+transition-duration: .3s;
+border: 1px solid transparent;
+letter-spacing: 2px;
+min-width: 160px;
+text-transform: uppercase;
+white-space: normal;
+font-weight: 700;
+text-align: center;
+padding: 16px 14px 18px;
+color: #616467;
+box-shadow: inset 0 0 0 2px #616467;
+background-color: transparent;
+height: 48px;
+margin-top: 1rem;
+margin-right: 1rem;
 }
 
-button {
-  --text-base: 277deg, 55%, 40%;
-  --text-hover: 307deg, 72%, 86%;
-  --shadow-start: 52deg, 100%, 72%;
-  --shadow-end: 282deg, 90%, 50%;
-  --shadow-inner: 277deg, 90%, 62%;
-  all: unset;
-  color: white;
-  font: 700 1.125rem/1.2 Raleway, sans-serif;
-  letter-spacing: 0.08em;
-  text-transform: uppercase;
-  text-align: center;
-  padding: 0.85em;
-  max-width: 100%;
-  width: 12em;
-  background: inherit;
-  background-clip: padding-box;
-  border: 5px solid rgb(255, 255, 255);
-  border-radius: 2em;
-  cursor: pointer;
-  position: relative;
-  transition: 0.25s ease-out;
-  margin-right: 2rem;
-  z-index: 4;
-
-}
-
-button::before, button::after {
-  content: "";
-  border-radius: inherit;
-  transition: inherit;
-  position: absolute;
-  inset: 0;
-  pointer-events: none;
-}
-button::before {
-  inset: -0.2em;
-  z-index: -1;
-  background:linear-gradient(0deg, rgb(118, 118, 118) 0%, #C0C0C0 100%);
-  filter: blur(1.2em) saturate(1.2);
-  transform-origin: bottom;
-  transform: scaleY(0.5);
-  opacity: 0;
-}
-
-button::after {
-  box-shadow: inset 0 0 0 1px #fff, 0 0 0 4px rgba(255, 255, 255, 0.988), 1px 1px 0 1px #fff;
-  mix-blend-mode: overlay;
-  opacity: 0;
-}
-button:hover, button:focus {
-  color: rgb(255, 255, 255);
-  border-color: transparent;
-  box-shadow: inset 0 1.4em 0 hsla(var(--shadow-inner), rgb(145, 18, 18)), inset 0 0 1.4em hsla(var(--shadow-inner), 0.72), 0 1px 1px hsla(var(--shadow-inner), 0.32);
-}
-button:hover::before, button:hover::after, button:focus::before, button:focus::after {
-  transform: none;
-  opacity: 1;
+.backbutton:hover{
+    color: #fff;
+    background-color: #616467;
 }
 
 .kaart-lang {
@@ -312,6 +276,7 @@ button:hover::before, button:hover::after, button:focus::before, button:focus::a
     font-size: 3vh;
     font-family: "Montserrat", sans-serif;
     color: white;
+    margin-top: 2rem;
 }
 
 h1 {
@@ -325,6 +290,7 @@ a {
 .text-div p {
     background-color: rgba(255, 255, 255, 0.249);
     border-radius: 15px;
+
 }
 
 .kaart-kort img {
@@ -359,48 +325,3 @@ a {
 
 
 
-<!-- HTML !-->
-<button class="button-67" role="button">Button 67</button>
-
-/* CSS */
-.button-67 {
-  align-items: center;
-  background: #f5f5fa;
-  border: 0;
-  border-radius: 8px;
-  box-shadow: -10px -10px 30px 0 #fff,10px 10px 30px 0 #1d0dca17;
-  box-sizing: border-box;
-  color: #2a1f62;
-  cursor: pointer;
-  display: flex;
-  font-family: "Cascadia Code",Consolas,Monaco,"Andale Mono","Ubuntu Mono",monospace;
-  font-size: 1rem;
-  justify-content: center;
-  line-height: 1.5rem;
-  padding: 15px;
-  position: relative;
-  text-align: left;
-  transition: .2s;
-  user-select: none;
-  -webkit-user-select: none;
-  touch-action: manipulation;
-  white-space: pre;
-  width: max-content;
-  word-break: normal;
-  word-spacing: normal;
-}
-
-.button-67:hover {
-  background: #f8f8ff;
-  box-shadow: -15px -15px 30px 0 #fff, 15px 15px 30px 0 #1d0dca17;
-}
-
-@media (min-width: 768px) {
-  .button-67 {
-    padding: 24px;
-  }
-}
-        
-
-/* Parent background */
-#F5F5FA
