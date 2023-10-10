@@ -7,7 +7,13 @@ body {
     font-family: "Quicksand", sans-serif;
     font-size: 62.5%;
     font-size: 10px;
+    background-color: black !important ;
 }
+
+@font-face {
+    font-family: ostrich;
+    src: url(/font/Gabarito-VariableFont_wght.ttf);
+  }
 
 .nav {
     width: 100%;
@@ -39,6 +45,8 @@ body {
     height: 65px;
     padding: 0;
     padding-right: 3rem;
+    animation: turn 10s infinite alternate !important;
+
 }
 
 .nav div.main_list ul li a {
@@ -46,10 +54,11 @@ body {
     color: #fff;
     line-height: 65px;
     font-size: 2.4rem;
+    
 }
 
 .nav div.main_list ul li a:hover {
-    color: #082b48;
+    color: rgba(114, 114, 235);
 }
 
 .navTrigger {
@@ -103,6 +112,7 @@ body {
         width: 100%;
         font-size: 3rem;
         padding: 20px;
+        
     }
     .nav div.media_button {
         display: block;
@@ -330,45 +340,36 @@ body {
     display: flex;
     justify-content: center;
     text-align: center;
-    padding-left: 0 !important ; 
-    padding-right: 0 !important;
-    margin-left: 0;
-    margin-right: 0;
+ 
   }
 
 
-  .containerHoog{
+  .containerHoog-1{
     text-shadow: 4px 4px 15px rgba(0,0,0,0.87);
 
     background-image: url(/afbeeldingen/about-me.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
-    margin-left: 0;
-    margin-right: 0;
-    padding-left: 0;
-    padding-right: 0;
+      
   }
 
   .headText{
     display: flex;
     justify-content: center;
-    padding-top: 5rem;
+    padding-top: 21rem;
   }
 
-  .text-1{
-    width: 100%;
-  }
-
-  .text-2{
-    width: 100%;
-  }
 
   .smallText{
   color: white;
-  font-size: 2rem;
-  font-weight: 2rem;
+  font-size: 2.5rem;
+  font-weight: 4rem;
+  transform: rotate(3600deg);
+
   }
+
+    
 
   .social-icons {
     color:white;
@@ -378,12 +379,137 @@ body {
   }
 
   .social-icons i {
-    margin-right: 3rem;
+    padding: 1rem;
+     color: white;
   }
 
-  .div-laag{
-    background-color: #010005;
-    margin-bottom: 50rem; 
-    display: flex;
+  .social-icons i:hover {
+    color: rgb(114, 114, 235);
   }
-  
+
+  .containerHoog-2{
+    background-color: #000000;
+  }
+
+  .pfp{
+ 
+    border-radius:50%;
+    border: 10px rgba(255, 255, 255, 0.447) solid;
+    box-shadow: 0px 0px 100px 37px #b6b5cf90;
+    ;
+  }
+
+
+  .text1{
+    color: white;
+    -webkit-box-shadow: 2px 50px 50px 31px #000000; 
+    box-shadow: 2px 50px 50px 31px #000000;
+    text-align: center;
+    font-size: 2.3vh;
+    font-weight: 2vh;
+    justify-content: center;
+
+  }
+
+  .text1-2{
+    padding: 4vh;
+
+    font-size: 4vh;
+    color: rgb(255, 255, 255);
+  }
+
+  .text-2{
+    z-index: 50;
+  }
+
+  .text-3{
+    z-index: 5
+  }
+
+  .laag1{
+     -webkit-box-shadow: 2px 50px 50px 31px #000000; 
+     box-shadow: 2px 50px 50px 31px #000000; 
+    padding: 3vh;
+    justify-content: space-between;
+    margin-top: 28rem;
+
+  }
+
+  .containerLaag-1 {
+    border: 1px solid red;
+  }
+
+  .projectFlexbox {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+  }
+
+  .gameTitle {
+    text-align: center;
+    font-size: 5em;
+    font-weight: 700;
+    color: white;
+    font-family: ostrich;
+  }
+
+  .gameDescription {
+    padding-top: 3rem;
+    padding-bottom: 5rem;
+    font-size:medium;
+    color: white;
+    font-family: ostrich;
+    font-size: 4em;
+  }
+
+  .gameBtn {
+    transition: 0.3s;
+    width: 20rem;
+    color: white;
+    border-radius: 10px;
+    border: 1px solid rgb(255, 255, 255);
+    font-family: ostrich;
+    padding-bottom: 0;
+    height: 8rem;
+    text-decoration: none;
+  }
+
+  .gameBtn:hover {
+    transition: 0.3s;
+    background-color: white;
+    text-decoration: none;
+
+  }
+
+  .buitenBox{
+    padding-top: 22rem;
+    justify-content: center;
+    background-color: black;
+  }
+
+  .workbox {
+    padding-bottom: 4rem;
+    width: 80%;
+    background-color: black;
+    flex-direction: row;
+
+  }
+
+  .workbox h1 {
+    color: white;
+    font-size: 7vh;
+    padding-top: 2rem;
+    font-family: ostrich;
+    text-decoration: none;
+
+    
+  }
+  .workbox p {
+    color: rgb(123, 123, 123);
+    font-size: 3vh;
+    font-family: ostrich;
+    text-decoration: none;
+    margin-bottom: 10rem;
+  }
