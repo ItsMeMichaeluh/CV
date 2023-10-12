@@ -471,7 +471,7 @@ body {
     border-radius: 10px;
     border: 1px solid rgb(255, 255, 255);
     font-family: ostrich;
-    padding-bottom: 0;
+    padding-bottom: 0;  
     height: 8rem;
     text-decoration: none;
   }
@@ -483,52 +483,82 @@ body {
 
   }
 
-  .buitenBox{
+  .buitenBox {
     padding-top: 22rem;
     justify-content: center;
     background-color: black;
   }
-
+  
   .workbox {
     padding-bottom: 4rem;
     width: 80%;
     background-color: black;
-    flex-direction: row;
-
+    flex-direction: column; /* Change to column for smaller screens */
+    align-items: center; /* Center content horizontally */
+    text-align: center; /* Center text */
   }
-
+  
   .workbox h1 {
     color: white;
     font-size: 7vh;
     padding-top: 2rem;
     font-family: ostrich;
     text-decoration: none;
-
-    
   }
+  
   .workbox p {
     color: rgb(123, 123, 123);
     font-size: 3vh;
     font-family: ostrich;
     text-decoration: none;
-    margin-bottom: 10rem;
+    margin-bottom: 3rem; /* Reduce margin for smaller screens */
   }
-
-  .ervaringCol{
-    justify-content:space-between;
-    padding:2rem;
+  
+  .ervaringCol {
+    justify-content: center;
+    padding: 2rem;
   }
- 
-  .ervaringFoto{
+  
+  .ervaringFoto {
     margin: 0;
-    position: absolute;
-    top: 50%;
-    -ms-transform: translateY(-50%);
-    transform: translateY(-50%);
+  }
+  
+  .ervaringFoto2 {
+    border: white solid 1px; /* Correct 'sold' to 'solid' */
+    -webkit-box-shadow: 0px 0px 25px 14px rgba(255, 255, 255, 0.74);
+    box-shadow: 0px 0px 25px 14px rgba(255, 255, 255, 0.74);
+    max-width: 100%; /* Ensure the image scales with its container */
+  }
+  
+
+  .CV{
+    justify-content: center;
+    margin-top: 20rem;
+    display: flex;
   }
 
-  .ervaringFoto2{
-    border: white sold 1px;
+  .CVimg{
     -webkit-box-shadow: 0px 0px 25px 14px rgba(255,255,255,0.74); 
     box-shadow: 0px 0px 25px 14px rgba(255,255,255,0.74);
+  }
+
+  .CVcol{
+    margin-top: 17rem;
+  }
+
+
+.CVtext h1{
+     color: white !important;
+    font-size: 7vh;
+    padding-top: 2rem;
+    font-family: ostrich;
+    text-decoration: none;
+}
+
+  .CVtext a{
+    color: rgb(161, 159, 159);
+    font-size: 5vh;
+    font-family: ostrich;
+    text-decoration: none;
+    margin-bottom: 10rem;
   }
