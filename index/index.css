@@ -1,408 +1,253 @@
+
 html,
 body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-}
-/*-- Inspiration taken from abdo steif -->
-/* --> https://codepen.io/abdosteif/pen/bRoyMb?editors=1100*/
-
-/* Navbar section */
-
-.nav {
-    width: 100%;
-    height: 65px;
-    position: fixed;
-    line-height: 65px;
-    text-align: center;
+    font-family: "Quicksand", sans-serif;
+    font-size: 62.5%;
+    font-size: 10px;
+    background-color: black !important ;
 }
 
+@font-face {
+    font-family: ostrich;
+    src: url(/font/Gabarito-VariableFont_wght.ttf);
+  }
 
-.nav div.main_list {
-    height: 65px;
-    float: right;
-}
 
-.nav div.main_list ul {
-    width: 100%;
-    height: 65px;
+
+    .pfp-main{
+        -webkit-box-shadow: 0px 0px 19px 8px rgba(255,255,255,1);
+        -moz-box-shadow: 0px 0px 19px 8px rgba(255,255,255,1);
+        box-shadow: 0px 0px 19px 8px rgba(255,255,255,1);
+    }
+
+  .div-hoog{
     display: flex;
-    list-style: none;
-    margin: 0;
-    padding: 0;
     justify-content: center;
-    align-items: center;
-}
-
-.nav div.main_list ul li {
-    width: auto;
-    height: 65px;
-    padding: 0;
-    padding-right: 3rem;
-    display: flex; 
-    align-items: center;
-}
-
-.nav div.main_list ul li a {
-    text-decoration: none;
-    color: #fff;
-    line-height: 65px;
-    font-size: 2.4rem;
-}
-
-.nav div.main_list ul li a:hover {
-    color: #00E676;
-}
+    text-align: center; 
+    padding: 0px !important;
+ 
+  }
 
 
-/* Home section */
+  .containerHoog-1{
+    text-shadow: 4px 4px 15px rgba(0,0,0,0.87);
 
-.home {
-    width: 100%;
-    height: 100vh;
-}
-
-.navTrigger {
-    display: none;
-}
-
-.nav {
-    padding-top: 20px;
-    padding-bottom: 20px;
-    -webkit-transition: all 0.4s ease;
-    transition: all 0.4s ease;
-}
-
-
-/* Media qurey section */
-
-@media screen and (min-width: 768px) and (max-width: 1024px) {
-    .container {
-        margin: 0;
-    }
-}
-
-@media screen and (max-width:768px) {
-    .navTrigger {
-        display: block;
-    }
-    .nav div.logo {
-        margin-left: 15px;
-    }
-    .nav div.main_list {
-        width: 100%;
-        height: 0;
-        overflow: hidden;
-    }
-    .nav div.show_list {
-        height: auto;
-        display: none;
-    }
-    .nav div.main_list ul {
-        flex-direction: column;
-        width: 100%;
-        height: 100vh;
-        right: 0;
-        left: 0;
-        bottom: 0;
-        background-color: #111;
-        /*same background color of navbar*/
-        background-position: center top;
-    }
-    .nav div.main_list ul li {
-        width: 100%;
-        text-align: right;
-    }
-    .nav div.main_list ul li a {
-        text-align: center;
-        width: 100%;
-        font-size: 3rem;
-        padding: 20px;
-    }
-    .nav div.media_button {
-        display: block;
-    }
-}
-
-
-/* Animation */
-/* Inspiration taken from Dicson https://codemyui.com/simple-hamburger-menu-x-mark-animation/ */
-
-.navTrigger {
-    cursor: pointer;
-    width: 30px;
-    height: 25px;
-    margin: auto;
-    position: absolute;
-    right: 30px;
-    top: 0;
-    bottom: 0;
-}
-
-.navTrigger i {
-    background-color: #fff;
-    border-radius: 2px;
-    content: '';
-    display: block;
-    width: 100%;
-    height: 4px;
-}
-
-.navTrigger i:nth-child(1) {
-    -webkit-animation: outT 0.8s backwards;
-    animation: outT 0.8s backwards;
-    -webkit-animation-direction: reverse;
-    animation-direction: reverse;
-}
-
-.navTrigger i:nth-child(2) {
-    margin: 5px 0;
-    -webkit-animation: outM 0.8s backwards;
-    animation: outM 0.8s backwards;
-    -webkit-animation-direction: reverse;
-    animation-direction: reverse;
-}
-
-.navTrigger i:nth-child(3) {
-    -webkit-animation: outBtm 0.8s backwards;
-    animation: outBtm 0.8s backwards;
-    -webkit-animation-direction: reverse;
-    animation-direction: reverse;
-}
-
-.navTrigger.active i:nth-child(1) {
-    -webkit-animation: inT 0.8s forwards;
-    animation: inT 0.8s forwards;
-}
-
-.navTrigger.active i:nth-child(2) {
-    -webkit-animation: inM 0.8s forwards;
-    animation: inM 0.8s forwards;
-}
-
-.navTrigger.active i:nth-child(3) {
-    -webkit-animation: inBtm 0.8s forwards;
-    animation: inBtm 0.8s forwards;
-}
-
-@-webkit-keyframes inM {
-    50% {
-        -webkit-transform: rotate(0deg);
-    }
-    100% {
-        -webkit-transform: rotate(45deg);
-    }
-}
-
-@keyframes inM {
-    50% {
-        transform: rotate(0deg);
-    }
-    100% {
-        transform: rotate(45deg);
-    }
-}
-
-@-webkit-keyframes outM {
-    50% {
-        -webkit-transform: rotate(0deg);
-    }
-    100% {
-        -webkit-transform: rotate(45deg);
-    }
-}
-
-@keyframes outM {
-    50% {
-        transform: rotate(0deg);
-    }
-    100% {
-        transform: rotate(45deg);
-    }
-}
-
-@-webkit-keyframes inT {
-    0% {
-        -webkit-transform: translateY(0px) rotate(0deg);
-    }
-    50% {
-        -webkit-transform: translateY(9px) rotate(0deg);
-    }
-    100% {
-        -webkit-transform: translateY(9px) rotate(135deg);
-    }
-}
-
-@keyframes inT {
-    0% {
-        transform: translateY(0px) rotate(0deg);
-    }
-    50% {
-        transform: translateY(9px) rotate(0deg);
-    }
-    100% {
-        transform: translateY(9px) rotate(135deg);
-    }
-}
-
-@-webkit-keyframes outT {
-    0% {
-        -webkit-transform: translateY(0px) rotate(0deg);
-    }
-    50% {
-        -webkit-transform: translateY(9px) rotate(0deg);
-    }
-    100% {
-        -webkit-transform: translateY(9px) rotate(135deg);
-    }
-}
-
-@keyframes outT {
-    0% {
-        transform: translateY(0px) rotate(0deg);
-    }
-    50% {
-        transform: translateY(9px) rotate(0deg);
-    }
-    100% {
-        transform: translateY(9px) rotate(135deg);
-    }
-}
-
-@-webkit-keyframes inBtm {
-    0% {
-        -webkit-transform: translateY(0px) rotate(0deg);
-    }
-    50% {
-        -webkit-transform: translateY(-9px) rotate(0deg);
-    }
-    100% {
-        -webkit-transform: translateY(-9px) rotate(135deg);
-    }
-}
-
-@keyframes inBtm {
-    0% {
-        transform: translateY(0px) rotate(0deg);
-    }
-    50% {
-        transform: translateY(-9px) rotate(0deg);
-    }
-    100% {
-        transform: translateY(-9px) rotate(135deg);
-    }
-}
-
-@-webkit-keyframes outBtm {
-    0% {
-        -webkit-transform: translateY(0px) rotate(0deg);
-    }
-    50% {
-        -webkit-transform: translateY(-9px) rotate(0deg);
-    }
-    100% {
-        -webkit-transform: translateY(-9px) rotate(135deg);
-    }
-}
-
-@keyframes outBtm {
-    0% {
-        transform: translateY(0px) rotate(0deg);
-    }
-    50% {
-        transform: translateY(-9px) rotate(0deg);
-    }
-    100% {
-        transform: translateY(-9px) rotate(135deg);
-    }
-}
-
-.affix {
-    padding: 0;
-    background-color: #111;
-}
-
-
-
-
-
-
-.myH2 {
-	text-align:center;
-	font-size: 4rem;
-}
-.myP {
-	text-align: justify;
-	padding-left:15%;
-	padding-right:15%;
-	font-size: 20px;
-}
-@media all and (max-width:700px){
-	.myP {
-		padding:2%;
-	}
-}
-
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Lato', sans-serif;
-    font-family: 'Oswald', sans-serif;
+    background-image: url(/afbeeldingen/CV-Wallpaper5.0.jpg.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;     
     
+      
   }
 
-  body{
-    background-image: url(/afbeeldingen/rene-padillo-d8nGnF1IqCk-unsplash.jpg) ;
+  .headText{
+    display: flex;
+    justify-content: center;
+    padding-top: 21rem;
   }
 
-  .content{
-    font-size: 8rem;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%) skewY(-6deg);
-    transform-origin: bottom left;  
-    z-index: -1;
-    color: transparent;
-    text-shadow:
-     
-     /* This set has more blur distance to create glowing effect */
-     1px -1px 10px rgba(255, 255, 255, 0.4), 
-     0px -1px 10px rgba(255, 255, 255, 0.4),  
-    -1px -1px 10px rgba(255, 255, 255, 0.4), 
 
-     
-     /* This set has darken color to create depth */
-    -1px -3px 2px #ddd, 
-    -2px -3px 2px #ddd, 
-    -3px -3px 2px #ddd,
+  .smallText{
+  color: white;
+  font-size: 2.5rem;
+  font-weight: 4rem;
+  transform: rotate(3600deg);
 
-    -2px -4px 2px #fff, 
-    -3px -4px 2px #fff, 
-    -4px -4px 2px #fff,
-
-    -3px -5px 1px #fff, 
-    -4px -5px 1px #fff, 
-    -5px -5px 1px #fff;
   }
-  
+
+    
+
+  .social-icons {
+    color:white;
+    font-size:3vw;
+    text-align: center;
+
+  }
+
+  .social-icons i {
+    padding: 1rem;
+     color: white;
+  }
+
+  .social-icons i:hover {
+    color: rgb(114, 114, 235);
+  }
+
+  .containerHoog-2{
+    background-color: #000000;
+  }
+
+  .pfp{
+ 
+    border-radius:50%;
+    border: 10px rgba(255, 255, 255, 0.447) solid;
+    box-shadow: 0px 0px 100px 37px #b6b5cf90;
+    ;
+  }
 
 
-  .content .title{
-    font-size: 6rem;
+  .text1{
+    color: white;
+    -webkit-box-shadow: 2px 50px 50px 31px #000000; 
+    box-shadow: 2px 50px 50px 31px #000000;
+    text-align: center;
+    font-size: 2.3vh;
+    font-weight: 2vh;
+    justify-content: center;
+
+  }
+
+  .text1-2{
+    padding: 4vh;
+
+    font-size: 4vh;
+    color: rgb(255, 255, 255);
+  }
+
+  .text-2{
+    z-index: 50;
+  }
+
+  .text-3{
+    z-index: 5
+  }
+
+  .laag1{
+     -webkit-box-shadow: 2px 50px 50px 31px #000000; 
+     box-shadow: 2px 50px 50px 31px #000000; 
+    padding: 3vh;
+    justify-content: space-between;
+    margin-top: 28rem;
+
+  }
+
+  .containerLaag-1 {
+   
+  }
+
+  .projectFlexbox {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+  }
+
+  .gameTitle {
+    text-align: center;
+    font-size: 5em;
     font-weight: 700;
+    color: white;
+    font-family: ostrich;
   }
-  .content p{
-    font-size: 5rem;
-    font-weight: 600;
+
+  .gameDescription {
+    padding-top: 3rem;
+    padding-bottom: 5rem;
+    font-size:medium;
+    color: white;
+    font-family: ostrich;
+    font-size: 4em;
+  }
+
+  .gameBtn {
+    transition: 0.3s;
+    width: 20rem;
+    color: white;
+    border-radius: 10px;
+    border: 1px solid rgb(255, 255, 255);
+    font-family: ostrich;
+    padding-bottom: 0;  
+    height: 8rem;
+    text-decoration: none;
+  }
+
+  .gameBtn:hover {
+    transition: 0.3s;
+    background-color: white;
+    text-decoration: none;
+
+  }
+
+  .buitenBox {
+    padding-top: 22rem;
+    justify-content: center;
+    background-color: black;
   }
   
-  @keyframes rotate {
-    0%{
-      filter: hue-rotate(0deg);
-    }
-    100%{
-      filter: hue-rotate(360deg);
-    }
+  .workbox {
+    padding-bottom: 4rem;
+    width: 80%;
+    background-color: black;
+    flex-direction: column; /* Change to column for smaller screens */
+    align-items: center; /* Center content horizontally */
+    text-align: center; /* Center text */
+  }
+  
+  .workbox h1 {
+    color: white;
+    font-size: 7vh;
+    padding-top: 2rem;
+    font-family: ostrich;
+    text-decoration: none;
+  }
+  
+  .workbox p {
+    color: rgb(123, 123, 123);
+    font-size: 3vh;
+    font-family: ostrich;
+    text-decoration: none;
+    margin-bottom: 3rem; /* Reduce margin for smaller screens */
+  }
+  
+  .ervaringCol {
+    justify-content: center;
+    padding: 2rem;
+  }
+  
+  .ervaringFoto {
+    margin: 0;
+  }
+  
+  .ervaringFoto2 {
+    border: white solid 1px; /* Correct 'sold' to 'solid' */
+    -webkit-box-shadow: 0px 0px 25px 14px rgba(255, 255, 255, 0.74);
+    box-shadow: 0px 0px 25px 14px rgba(255, 255, 255, 0.74);
+    max-width: 100%; /* Ensure the image scales with its container */
+  }
+  
+
+  .CV{
+    justify-content: center;
+    margin-top: 20rem;
+    display: flex;
+  }
+
+  .CVimg{
+    -webkit-box-shadow: 0px 0px 25px 14px rgba(255,255,255,0.74); 
+    box-shadow: 0px 0px 25px 14px rgba(255,255,255,0.74);
+  }
+
+  .CVcol{
+    margin-top: 17rem;
+  }
+
+
+.CVtext h1{
+     color: white !important;
+    font-size: 7vh;
+    padding-top: 2rem;
+    font-family: ostrich;
+    text-decoration: none;
+}
+
+  .CVtext a{
+    color: rgb(161, 159, 159);
+    font-size: 5vh;
+    font-family: ostrich;
+    text-decoration: none;
+    margin-bottom: 10rem;
   }
