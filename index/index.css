@@ -52,9 +52,7 @@ body {
 
   .smallText{
   color: white;
-  font-size: 2.5rem;
   font-weight: 4rem;
-  transform: rotate(3600deg);
 
   }
 
@@ -62,7 +60,6 @@ body {
 
   .social-icons {
     color:white;
-    font-size:3vw;
     text-align: center;
 
   }
@@ -81,7 +78,9 @@ body {
   }
 
   .pfp{
- 
+    height: auto;
+    width: 100%;
+
     border-radius:50%;
     border: 10px rgba(255, 255, 255, 0.447) solid;
     box-shadow: 0px 0px 100px 37px #b6b5cf90;
@@ -94,7 +93,7 @@ body {
     -webkit-box-shadow: 2px 50px 50px 31px #000000; 
     box-shadow: 2px 50px 50px 31px #000000;
     text-align: center;
-    font-size: 2.3vh;
+    font-size: 2.3vw;
     font-weight: 2vh;
     justify-content: center;
 
@@ -102,8 +101,6 @@ body {
 
   .text1-2{
     padding: 4vh;
-
-    font-size: 4vh;
     color: rgb(255, 255, 255);
   }
 
@@ -138,7 +135,6 @@ body {
 
   .gameTitle {
     text-align: center;
-    font-size: 5em;
     font-weight: 700;
     color: white;
     font-family: ostrich;
@@ -147,21 +143,20 @@ body {
   .gameDescription {
     padding-top: 3rem;
     padding-bottom: 5rem;
-    font-size:medium;
     color: white;
     font-family: ostrich;
-    font-size: 4em;
+    
   }
 
   .gameBtn {
     transition: 0.3s;
-    width: 20rem;
+    width: auto;
     color: white;
     border-radius: 10px;
     border: 1px solid rgb(255, 255, 255);
     font-family: ostrich;
     padding-bottom: 0;  
-    height: 8rem;
+    height: auto;
     text-decoration: none;
   }
 
@@ -189,7 +184,7 @@ body {
   
   .workbox h1 {
     color: white;
-    font-size: 7vh;
+
     padding-top: 2rem;
     font-family: ostrich;
     text-decoration: none;
@@ -197,7 +192,6 @@ body {
   
   .workbox p {
     color: rgb(123, 123, 123);
-    font-size: 3vh;
     font-family: ostrich;
     text-decoration: none;
     margin-bottom: 3rem; /* Reduce margin for smaller screens */
@@ -238,7 +232,6 @@ body {
 
 .CVtext h1{
      color: white !important;
-    font-size: 7vh;
     padding-top: 2rem;
     font-family: ostrich;
     text-decoration: none;
@@ -246,8 +239,196 @@ body {
 
   .CVtext a{
     color: rgb(161, 159, 159);
-    font-size: 5vh;
     font-family: ostrich;
     text-decoration: none;
     margin-bottom: 10rem;
+  }
+
+
+
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 576px) {
+
+  .smallText{
+    font-size: 1.5rem;
+  }
+
+  .social-icons{
+    font-size: 3rem;
+  }
+
+  .text1-2{
+    font-size: 1.5rem;
+   }
+
+   .workbox h1{
+    font-size: 3rem;
+   }
+
+   .workbox p{
+    font-size: 1.5rem;
+   }
+
+   .gameTitle{
+
+    font-size: 4rem;
+   }
+
+   .gameDescription{
+    font-size: 1.5rem ;
+   }
+
+
+   .CVtext h1{
+    font-size: 3rem;
+   }
+
+   .CVtext a{
+    font-size: 2rem;
+   }
+}
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 576px) {
+  
+  .smallText{
+    font-size: 2.2rem;
+  }
+
+  .social-icons{
+    font-size: 4.5rem;
+  }
+
+  .text1-2{
+    font-size: 1.8rem;
+   }
+
+   .workbox h1{
+    font-size: 4.5rem;
+   }
+  .gameTitle{
+
+    font-size: 5rem;
+   }
+
+   .workbox p{
+    font-size: 2.4rem;
+   }
+
+   .CVtext h1{
+    font-size: 3rem;
+   }
+
+   .CVtext a{
+    font-size: 2rem;
+   }
+}
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+
+  .smallText{
+    font-size: 2.6rem;
+  }
+
+  .social-icons{
+    font-size: 5rem;
+  }
+
+  .text1-2{
+    font-size: 2.2rem;
+   }
+
+   .workbox h1{
+    font-size: 5rem;
+   }
+  .gameTitle{
+
+    font-size: 6rem;
+   }
+
+   .workbox p{
+    font-size: 2.6rem;
+   }
+
+   .CVtext h1{
+    font-size: 3rem;
+   }
+
+   .CVtext a{
+    font-size: 2.5rem;
+   }
+}
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+
+  .smallText{
+    font-size: 3rem;
+  }
+
+  .social-icons{
+    font-size: 7rem;
+  }
+
+  .text1-2{
+    font-size: 2.8rem;
+   }
+
+   .workbox h1{
+    font-size: 6rem;
+   }
+  .gameTitle{
+
+    font-size: 6rem;
+   }
+
+   .workbox p{
+    font-size: 2.6rem;
+   }
+
+   .CVtext h1{
+    font-size: 5rem;
+   }
+
+   .CVtext a{
+    font-size: 3.5rem;
+   }
+}
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+
+  .smallText{
+    font-size: 3rem;
+  }
+
+  .social-icons{
+    font-size: 7rem;
+  }
+
+  .text1-2{
+    font-size: 2.8rem;
+   }
+
+   .workbox h1{
+    font-size: 5rem;
+   }
+  .gameTitle{
+
+    font-size: 5rem;
+   }
+
+   .workbox p{
+    font-size: 3rem;
+   }
+
+   .gameDescription{
+    font-size: 3rem ;
+   }
+
+   .CVtext h1{
+    font-size: 5rem;
+   }
+
+   .CVtext a{
+    font-size: 4rem;
+   }
   }
