@@ -26,7 +26,8 @@ body {
   .div-hoog{
     display: flex;
     justify-content: center;
-    text-align: center;
+    text-align: center; 
+    padding: 0px !important;
  
   }
 
@@ -34,10 +35,11 @@ body {
   .containerHoog-1{
     text-shadow: 4px 4px 15px rgba(0,0,0,0.87);
 
-    background-image: url(/afbeeldingen/about-me.jpg);
+    background-image: url(/afbeeldingen/CV-Wallpaper5.0.jpg.png);
     background-size: cover;
     background-repeat: no-repeat;
-    background-position: center center;
+    background-position: center center;     
+    
       
   }
 
