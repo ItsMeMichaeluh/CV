@@ -217,7 +217,7 @@ body {
   .CV{
     justify-content: center;
     margin-top: 20rem;
-    display: flex;
+    height: 110rem;
   }
 
   .CVimg{
@@ -238,10 +238,15 @@ body {
 }
 
   .CVtext a{
-    color: rgb(161, 159, 159);
+    color: rgb(178, 178, 178);
     font-family: ostrich;
     text-decoration: none;
     margin-bottom: 10rem;
+  }
+
+  #myPDF{
+    width: 85%;
+    min-height: 10rem;
   }
 
 
@@ -370,7 +375,7 @@ body {
   }
 
   .text1-2{
-    font-size: 2.8rem;
+    font-size: 3rem;
    }
 
    .workbox h1{
@@ -432,3 +437,80 @@ body {
     font-size: 4rem;
    }
   }
+   @media only screen and (min-width: 1800px) { 
+
+    .smallText{
+      font-size: 3.5rem;
+    }
+  
+    .social-icons{
+      font-size: 8rem;
+    }
+  
+    .text1-2{
+      font-size: 4rem;
+     }
+  
+     .workbox h1{
+      font-size: 5rem;
+     }
+    .gameTitle{
+  
+      font-size: 5rem;
+     }
+  
+     .workbox p{
+      font-size: 4rem;
+     }
+  
+     .gameDescription{
+      font-size: 4rem ;
+     }
+  
+     .CVtext h1{
+      font-size: 5rem;
+     }
+  
+     .CVtext a{
+      font-size: 5rem;
+     }
+    }
+
+    @media only screen and (min-width: 2100px) { 
+
+      .smallText{
+        font-size: 3.5rem;
+      }
+    
+      .social-icons{
+        font-size: 8rem;
+      }
+    
+      .text1-2{
+        font-size: 5rem;
+       }
+    
+       .workbox h1{
+        font-size: 5rem;
+       }
+      .gameTitle{
+    
+        font-size: 5rem;
+       }
+    
+       .workbox p{
+        font-size: 4rem;
+       }
+    
+       .gameDescription{
+        font-size: 4rem ;
+       }
+    
+       .CVtext h1{
+        font-size: 5rem;
+       }
+    
+       .CVtext a{
+        font-size: 5rem;
+       }
+      }
