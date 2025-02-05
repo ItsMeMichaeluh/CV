@@ -217,7 +217,7 @@ body {
   .CV{
     justify-content: center;
     margin-top: 20rem;
-    height: 110rem;
+    
   }
 
   .CVimg{
@@ -292,7 +292,12 @@ body {
    .CVtext a{
     font-size: 2rem;
    }
+
+   .CV {
+    display: block !important; 
+   }
 }
+
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (min-width: 576px) {
   
